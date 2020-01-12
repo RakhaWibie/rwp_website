@@ -22,5 +22,5 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
-      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: "false", default: "/img/garuda_icon.png" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false, default: "/img/garuda_icon.png" }
       - { label: "Body", name: "body", widget: "markdown" }
