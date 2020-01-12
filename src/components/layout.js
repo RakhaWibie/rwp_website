@@ -28,15 +28,15 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
+          margin: `0 10em`,
+          maxWidth: '80%',
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main><div className="grid-container">{children}</div></main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()} rwp usa, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
