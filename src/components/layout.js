@@ -26,15 +26,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 10em`,
-          maxWidth: '80%',
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
-      >
-        <main><div className="grid-container">{children}</div></main>
+      <div className="layout">
+        <main><div>{children}</div></main>
         <footer>
           © {new Date().getFullYear()} rwp usa, Built with
           {` `}

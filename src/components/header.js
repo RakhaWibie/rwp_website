@@ -6,7 +6,7 @@ import HeaderSection from "./headerSection"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `grey`,
+      background: `#525252`,
       marginBottom: `1.45rem`,
     }}
     className="navbar"

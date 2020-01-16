@@ -8,6 +8,7 @@ export default ({ data }) => {
     <Layout>
       <div>
         <h1>{post.frontmatter.title}</h1>
+        <img src={post.frontmatter.thumbnail}/>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -20,6 +21,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        thumbnail
       }
     }
   }

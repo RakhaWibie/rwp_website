@@ -24,3 +24,13 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false, default: "/img/garuda_icon.png" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "homeImage"
+    label: "Home Main Image"
+    folder: "content/home"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
