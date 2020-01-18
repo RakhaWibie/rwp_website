@@ -36,6 +36,13 @@ module.exports = {
         path: `${__dirname}/content/blog`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `home`,
+        path: `${__dirname}/content/home`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

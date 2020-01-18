@@ -137,10 +137,69 @@ template {
 
 /**/
 
+/* Home Grid */
+
+.home-1 {
+  grid-area: home-1;
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+}
+.home-2 {
+  grid-area: home-2;
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+}
+.home-3 {
+  grid-area: home-3;
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 4rem;
+}
+.home-4 {
+  grid-area: home-4;
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+}
+.home-5 {
+  grid-area: home-5;
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+}
+.home-6 {
+  grid-area: home-6;
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+}
+.home-7 {
+  grid-area: home-7;
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+}
+@media (min-width: 900px) {
+  .home-container {
+    display: grid;
+    grid-template-areas: 
+      'home-1 home-2 home-3'
+      'home-1 home-4 home-5'
+      'home-6 home-7 home-5'
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    width:100%;
+  }
+}
+
+/**/
+
 .layout {
-  margin: 0 10rem;
-  max-width: 80%;
-  padding: 0px 1.0875rem 1.45rem;
+  max-width: 100%;
   padding-top: 0;
 }
 .header-logo {
