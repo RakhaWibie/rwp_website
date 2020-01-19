@@ -24,6 +24,7 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Thumbnail", name: "thumbnail", widget: "image", required: false, default: "/img/garuda_icon.png" }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { name: "type", widget: "hidden", default: "blog"}
   - name: "homeImage"
     label: "Home Main Image"
     folder: "content/home"
@@ -34,6 +35,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { name: "type", widget: "hidden", default: "homeImage"}
   - name: "homeText"
     label: "Homepage Text"
     folder: "content/home"
@@ -43,3 +45,4 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Home Text", name: "text", widget: "markdown" }
+      - { name: "type", widget: "hidden", default: "homeText"}
